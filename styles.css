@@ -1,5 +1,9 @@
+body{
+    background-color: #141414;
+}
 .container{
     max-width:600px;
+    
 }
 .btn{
     background:#43d9be;

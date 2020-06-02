@@ -11,12 +11,15 @@ class chatUI{
             { addSuffix:true }
             );
         const html= `
-          <li class="list-group-item">
+          <li class="list-group-item chat-item">
             <span class="username">${data.username}</span>
             <span class="message">${data.message}</span>
             <div class="time">${when}</div>
           </li>
         `;
        this.list.innerHTML +=html;
+       const items= document.querySelectorAll('.chat-item');
+       const last = items[items.length-1];
+       last.scrollIntoView();
     }
 }

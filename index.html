@@ -9,12 +9,12 @@
 <body>
     <!--CONTAINER-->
     <div class="container my-4">
-        <h1 class="my-4 text-center">
+        <h1 class="my-4 text-center text-light">
             BS ChatRoom
         </h1>
        <!--ChatRoom Buttons-->
        <div class="chat-rooms mb-3 text-center">
-           <div class="my-2">Choose A ChatRoom:</div>
+           <div class="my-2 text-light">Choose A ChatRoom:</div>
            <button class="btn" id="general">#general</button>
            <button class="btn" id="gaming">#gaming</button>
            <button class="btn" id="music">#music</button>
@@ -23,7 +23,7 @@
 
        <!--Chat list/Window-->
        <div class="chat-window">
-        <ul class="chat-list list-group"></ul>
+        <ul class="chat-list list-group" style="overflow-y:auto; max-height: 250px;"></ul>
       </div>
        <!--New Chat Form-->
        <form class="new-chat my-3">
@@ -33,7 +33,7 @@
           </div>
           <input type="text" id="message" class="form-control" required>
           <div class="input-group-append">
-            <input type="submit" class="btn" value="send">
+            <input type="submit" class="btn" value="Send">
           </div>
         </div>
       </form>
@@ -45,7 +45,7 @@
              </div>
              <input type="text" id="name" class="form-control" required>
              <div class="input-group-append">
-                 <input type="submit" class="btn" value="update">
+                 <input type="submit" class="btn" value="Update">
              </div>
          </div>
          <div class="update-msg text-center my-3"></div>
