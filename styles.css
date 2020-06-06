@@ -2,17 +2,7 @@ body{
     background-color: #141414;
 }
 .container{
-    max-width:600px;
-    
-}
-.btn{
-    background:#43d9be;
-    color:white;
-    outline: none !important;
-    box-shadow: none !important;
-}
-.btn-focus:hover{
-    outline:none !important;
+    max-width:900px;
 }
 .username{
     font-weight:bold;

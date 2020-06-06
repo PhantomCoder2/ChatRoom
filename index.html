@@ -3,52 +3,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Chatroom</title>
 </head>
 <body>
     <!--CONTAINER-->
     <div class="container my-4">
-        <h1 class="my-4 text-center text-light">
+        <h1 class="my-4 text-center text-light animated fadeInUp">
             BS ChatRoom
         </h1>
        <!--ChatRoom Buttons-->
        <div class="chat-rooms mb-3 text-center">
-           <div class="my-2 text-light">Choose A ChatRoom:</div>
-           <button class="btn" id="general">#general</button>
-           <button class="btn" id="gaming">#gaming</button>
-           <button class="btn" id="music">#music</button>
-           <button class="btn" id="anime">#anime</button>
+           <div class="my-2 text-light font-weight-bold animated fadeInUp delays-2s">Choose A ChatRoom:</div>
+           <button type ="button" class="btn btn-primary text-monospace font-weight-bold animated fadeInUp delay-3s faster" id="general">#general</button>
+           <button class="btn btn-light text-monospace font-weight-bold animated fadeInUp delay-3s faster" id="gaming">#gaming</button>
+           <button class="btn btn-danger text-monospace font-weight-bold animated fadeInUp delay-4s faster" id="music">#music</button>
+           <button class="btn btn-success text-monospace font-weight-bold animated fadeInUp delay-4s faster" id="anime">#anime</button>
        </div>
-
+      <!--Rooom Title-->
+      <div class="room-title mb-3 text-center text-light text-monospace font-weight-bold animated fadeInUp delay-5s">
+         No Chat Room Selected
+      </div>
        <!--Chat list/Window-->
        <div class="chat-window">
         <ul class="chat-list list-group" style="overflow-y:auto; max-height: 250px;"></ul>
       </div>
        <!--New Chat Form-->
-       <form class="new-chat my-3">
+       <form class="new-chat my-3 d-none">
         <div class="input-group">
           <div class="input-group-prepend">
             <div class="input-group-text">Your message:</div>
           </div>
           <input type="text" id="message" class="form-control" required>
           <div class="input-group-append">
-            <input type="submit" class="btn" value="Send">
+            <input type="submit" class="btn btn-warning" value="Send">
           </div>
         </div>
       </form>
        <!--Update Name-->
-       <form class="new-name my-3">
+       <form class="new-name my-3 d-none">
          <div class="input-group">
              <div class="input-group-prepend">
                  <div class="input-group-text">Update Name:</div>
              </div>
              <input type="text" id="name" class="form-control" required>
              <div class="input-group-append">
-                 <input type="submit" class="btn" value="Update">
+                 <input type="submit" class="btn btn-warning" value="Update">
              </div>
          </div>
-         <div class="update-msg text-center my-3"></div>
+         <div class="update-msg text-center my-3 text-light">
+
+         </div>
+      </div>
        </form>
 
     </div>
